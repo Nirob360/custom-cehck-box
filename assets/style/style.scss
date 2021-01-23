@@ -1,0 +1,110 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*-- VARIABLES CSS--*/
+
+/* =============== BASE ===================*/
+*, ::after, ::before {  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+  
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffe8e8;
+
+  
+}
+
+/* ======== check box  design start  =====*/
+
+
+.container  {
+  
+   text-align: center;
+  h1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+   
+   label{
+    cursor: pointer;
+  }
+  }
+
+   
+  
+
+  input[type="checkbox"]{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: #939393;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    
+  }
+  input:checked[type="checkbox"]{    
+    background-color: aqua;
+  }
+
+  input[type="checkbox"]::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition:.5s;
+    
+  }
+  input:checked[type="checkbox"]::before{
+    left: 40px;
+    background-color: #04ac8a;
+    box-shadow: -1px -1px 13px 2px #67ebff;
+    
+  
+
+  }
+/* ======== check box  design end  =====*/
+/* ======== radio box  design start  =====*/
+.radio-box-group {
+
+input[type="radio"]{
+  position: relative;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: #13075f;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+
+}
+input[type="radio"]::before{
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  transition: .3s;
+  background-color: #e1ff00; 
+  border-radius: 50%;
+  transform: translate(-50%,-50%) scale(0);
+}
+input:checked[type="radio"]::before{
+  transform: translate(-50%,-50%) scale(1);
+}
+
+}
+
+/* ======== radio box  design end =====*/
+
